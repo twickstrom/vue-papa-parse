@@ -1,0 +1,2 @@
+# vuepapaparse
+VueJS PapaParse Plugin
