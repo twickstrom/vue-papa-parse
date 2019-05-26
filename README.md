@@ -1,2 +1,2 @@
-# vuepapaparse
+# VuePapaParse
 VueJS PapaParse Plugin
