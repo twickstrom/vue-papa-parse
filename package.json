@@ -1,4 +1,28 @@
 {
   "name": "vue-papa-parse",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "author": {
+    "name": "Tim Wickstrom",
+    "email": "tim@wickstrom.me"
+  },
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Tim Wickstrom",
+      "email": "tim@wickstrom.me",
+      "web": "https://timwickstrom.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twickstrom/vue-papa-parse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/twickstrom/vue-papa-parse/issues"
+  },
+  "homepage": "https://github.com/twickstrom/vue-papa-parse",
+  "main": "src/index.js",
+  "dependencies": {
+    "papaparse": "^4.6.3",
+  }
 }
