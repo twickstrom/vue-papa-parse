@@ -1,6 +1,9 @@
-import * as Papa from 'papaparse';
+import * as Papa from 'papaparse'
 
-export function install (Vue) {
-  Vue.component('VuePapaParse', Papa);
-  Vue.prototype.$papa = Papa;
+const VuePapaParse = {
+  install (Vue) {
+    Vue.prototype.$papa = Papa
+  }
 }
+
+export default VuePapaParse

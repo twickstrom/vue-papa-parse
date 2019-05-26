@@ -1,6 +1,6 @@
 {
   "name": "vue-papa-parse",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Tim Wickstrom",
     "email": "tim@wickstrom.me"
@@ -23,6 +23,6 @@
   "homepage": "https://github.com/twickstrom/vue-papa-parse",
   "main": "src/index.js",
   "dependencies": {
-    "papaparse": "^4.6.3",
+    "papaparse": "^4.6.3"
   }
 }
