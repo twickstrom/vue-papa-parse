@@ -1,6 +1,6 @@
 # VuePapaParse
 
-> A simple wrapper for PapaParse for VueJs.
+> A simple wrapper for for the original PapaParse built for VueJs.
 
 ## Installation
 
@@ -41,6 +41,35 @@ this.$papa.parse(url, {
 ### UNPARSE
 ```javascript
 this.$papa.unparse(data[, config])
+```
+
+### Config Options
+```javascript
+{
+	delimiter: "",	// auto-detect
+	newline: "",	// auto-detect
+	quoteChar: '"',
+	escapeChar: '"',
+	header: false,
+	transformHeader: undefined,
+	dynamicTyping: false,
+	preview: 0,
+	encoding: "",
+	worker: false,
+	comments: false,
+	step: undefined,
+	complete: undefined,
+	error: undefined,
+	download: false,
+	downloadRequestHeaders: undefined,
+	skipEmptyLines: false,
+	chunk: undefined,
+	fastMode: undefined,
+	beforeFirstChunk: undefined,
+	withCredentials: undefined,
+	transform: undefined,
+	delimitersToGuess: [',', '\t', '|', ';', Papa.RECORD_SEP, Papa.UNIT_SEP]
+}
 ```
 
 View all available PapaParse options by visiting [the docs](https://www.papaparse.com/docs)
