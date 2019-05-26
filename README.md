@@ -11,8 +11,9 @@ npm i vue-papa-parse
 
 yarn add vue-papa-parse
 ```
-
+## Default import
 ```javascript
+import Vue from 'vue'
 import VuePapaParse from 'vue-papa-parse'
 Vue.use(VuePapaParse)
 ```
@@ -42,4 +43,4 @@ this.$papa.parse(url, {
 this.$papa.unparse(data[, config])
 ```
 
-View all available PapaParse options by visiting [https://www.papaparse.com/docs]
+View all available PapaParse options by visiting [the docs](https://www.papaparse.com/docs)
