@@ -19,17 +19,17 @@ Vue.use(VuePapaParse)
 
 ## Usage
 
-## PARSE STRING
+### PARSE STRING
 ```javascript
 this.$papa.parse(csvString[, config])
 ```
 
-## PARSE LOCAL FILES
+### PARSE LOCAL FILES
 ```javascript
 this.$papa.parse(file, config)
 ```
 
-## PARSE REMOTE FILE
+### PARSE REMOTE FILE
 ```javascript
 this.$papa.parse(url, {
 	download: true,
@@ -37,7 +37,7 @@ this.$papa.parse(url, {
 })
 ```
 
-## UNPARSE
+### UNPARSE
 ```javascript
 this.$papa.unparse(data[, config])
 ```
