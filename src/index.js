@@ -31,7 +31,6 @@ const VuePapaParse = {
   install (Vue) {
     Papa.download = _downloadCsv
     Vue.prototype.$papa = Papa
-    Vue.component('PapaPreview', GChart)
   }
 }
 
