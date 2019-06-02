@@ -71,4 +71,11 @@ read the docs for [unparsing data](https://www.papaparse.com/docs#unparse)
 this.$papa.download(csv, title)
 ```
 
+### DEDUPE
+*Extended Papa to include a simple deduplication method. This allows you to simply remove exact duplicate entries from a parsed CSV file.*
+
+> This method takes one argument:
+>
+> - ```data``` usually the data key from the result object returned from ```this.$papa.parse(mixed[, config])```)
+
 View all available PapaParse options by visiting [the Official Papa docs](https://www.papaparse.com/docs)

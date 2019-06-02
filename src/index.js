@@ -27,9 +27,23 @@ const _downloadCsv = (csv, title) => {
   }
 }
 
+const _dedupe = (arr) => {
+  let flatData = arr.map(obj => JSON.stringify(obj))
+  let output = []
+
+  flatData.forEach(item => {
+    if (!output.find(obj => obj === item)) {
+      output.push(item)
+    }
+  })
+
+  return output.map(obj => JSON.parse(obj))
+}
+
 const VuePapaParse = {
   install (Vue) {
     Papa.download = _downloadCsv
+    Papa.dedupe = _dedupe
     Vue.prototype.$papa = Papa
   }
 }
