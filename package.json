@@ -1,5 +1,6 @@
 {
   "name": "vue-papa-parse",
+  "description": "A simple wrapper for for the original PapaParse built for VueJs",
   "version": "1.1.1",
   "author": {
     "name": "Tim Wickstrom",
@@ -13,6 +14,9 @@
       "web": "https://timwickstrom.com"
     }
   ],
+  "contributors": [
+    "Tim Wickstrom <@twickstrom>"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/twickstrom/vue-papa-parse.git"
@@ -20,6 +24,17 @@
   "bugs": {
     "url": "https://github.com/twickstrom/vue-papa-parse/issues"
   },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue2",
+    "PapaParse",
+    "vue-papa-parse",
+    "csv",
+    "json",
+    "csv-to-json",
+    "json-to-csv"
+  ],
   "homepage": "https://github.com/twickstrom/vue-papa-parse",
   "main": "src/index.js",
   "dependencies": {
