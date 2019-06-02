@@ -1,7 +1,7 @@
 {
   "name": "vue-papa-parse",
   "description": "A simple wrapper for for the original PapaParse built for VueJs",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": {
     "name": "Tim Wickstrom",
     "email": "tim@wickstrom.me"
@@ -15,7 +15,7 @@
     }
   ],
   "contributors": [
-    "Tim Wickstrom <@twickstrom>"
+    "Tim Wickstrom <tim@wickstrom.me>"
   ],
   "repository": {
     "type": "git",
