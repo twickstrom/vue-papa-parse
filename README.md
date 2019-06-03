@@ -106,10 +106,10 @@ this.$papa.download(csv, title)
 </template>
 <script>
 export default {
-	data () {
+  data () {
     return {
-			unparsedResults: null,
-			sampleData: [
+      unparsedResults: null,
+      sampleData: [
 				{
 				    "Column 1": "1-1",
 				    "Column 2": "1-2",
