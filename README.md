@@ -2,6 +2,20 @@
 
 > A simple wrapper for for the original PapaParse built for VueJs
 
+## Table of contents
+* [VuePapaParse](#vuepapaparse)
+* [Installation](#installation)
+* [Default import](#default-import)
+* [Usage](#usage)
+  * [Parse String](#parse-string)
+  * [Parse Local Files](#parse-local-files)
+  * [Parse Remote File](#parse-remote-file)
+  * [Unparse](#unparse)
+  * [Download](#download)
+  * [Dedupe](#dedupe)
+* [PapaParse Docs](#papaparsedocs)
+* [Example Vue Component](#example)
+
 ## Installation
 
 ```bash
@@ -78,4 +92,5 @@ this.$papa.download(csv, title)
 >
 > - ```data``` usually the data key from the result object returned from ```this.$papa.parse(mixed[, config])```)
 
+### PAPAPARSE DOCS
 View all available PapaParse options by visiting [the Official Papa docs](https://www.papaparse.com/docs)
