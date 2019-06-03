@@ -98,12 +98,13 @@ this.$papa.download(csv, title)
 ### EXAMPLE VUE COMPONENT
 ```javascript
 <template>
-	<button
-		@click="unparse"
-	>
-		Unparse Sample Data
-	</button>
+  <button
+    @click="unparse"
+  >
+    Unparse Sample Data
+  </button>
 </template>
+
 <script>
 export default {
   data () {
