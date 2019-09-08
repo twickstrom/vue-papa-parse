@@ -25,6 +25,7 @@ npm i vue-papa-parse
 
 yarn add vue-papa-parse
 ```
+
 ## Default import
 ```javascript
 import Vue from 'vue'

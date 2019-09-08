@@ -1,7 +1,7 @@
 {
   "name": "vue-papa-parse",
   "description": "A simple wrapper for for the original PapaParse built for VueJs",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "author": {
     "name": "Tim Wickstrom",
     "email": "tim@wickstrom.me"
@@ -27,9 +27,11 @@
   "keywords": [
     "vue",
     "vuejs",
+    "vue.js",
     "vue2",
-    "PapaParse",
     "vue-papa-parse",
+    "PapaParse",
+    "parse",
     "csv",
     "json",
     "csv-to-json",
