@@ -2,11 +2,12 @@ import * as Papa from 'papaparse'
 
 const _downloadCsv = (csv, title) => {
   try {
-    let uri = 'data:text/csv;charset=utf-8,' + '\uFEFF' + encodeURI(csv)
+    let csvData = new Blob([csv], { type: 'text/csv' })
+    let csvUrl = URL.createObjectURL(csvData)
 
     let link = document.createElement('a')
     link.id = 'csv-' + parseInt(Math.random().toString().slice(2,16))
-    link.href = uri
+    link.href = csvUrl
 
     document.body.appendChild(link)
 
