@@ -45,11 +45,7 @@ const VuePapaParse = {
   install (app, options) {
     Papa.download = _downloadCsv
     Papa.dedupe = _dedupe
-    if ('config' in app && 'globalProperties' in app.config) {
-      app.config.globalProperties.$papa = Papa
-    } else {
-      app.prototype.$papa = Papa
-    }
+    app.prototype.$papa = Papa
   }
 }
 
