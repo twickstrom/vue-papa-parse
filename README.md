@@ -5,7 +5,8 @@
 ## Table of contents
 * [VuePapaParse](#vuepapaparse)
 * [Installation](#installation)
-* [Default import](#default-import)
+* [Default import (Vue 2)](#default-import-vue-2)
+* [Default import (Vue 3)](#default-import-vue-3)
 * [Usage](#usage)
   * [Parse String](#parse-string)
   * [Parse Local Files](#parse-local-files)
@@ -26,11 +27,23 @@ npm i vue-papa-parse
 yarn add vue-papa-parse
 ```
 
-## Default import
+## Default import (Vue 2)
 ```javascript
 import Vue from 'vue'
 import VuePapaParse from 'vue-papa-parse'
 Vue.use(VuePapaParse)
+```
+
+## Default import (Vue 3)
+```javascript
+import { createApp } from 'vue'
+import App from './App.vue'
+import VuePapaParse from 'vue-papa-parse'
+
+const app = createApp(App)
+
+app.use(VuePapaParse)
+app.mount('#app')
 ```
 
 ## Usage

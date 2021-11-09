@@ -1,7 +1,7 @@
 {
   "name": "vue-papa-parse",
   "description": "A simple wrapper for for the original PapaParse built for VueJs",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "readme": "README.md",
   "author": {
     "name": "Tim Wickstrom",
