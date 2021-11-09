@@ -1,4 +1,5 @@
 import * as Papa from 'papaparse'
+import { isVue2, isVue3 } from 'vue-demi';
 
 const _downloadCsv = (csv, title) => {
   try {
@@ -43,9 +44,12 @@ const _dedupe = (arr) => {
 
 const VuePapaParse = {
   install (Vue) {
+    console.log(Vue)
     Papa.download = _downloadCsv
     Papa.dedupe = _dedupe
-    Vue.prototype.$papa = Papa
+    if (isVue2) {
+      Vue.prototype.$papa = Papa
+    }
   }
 }
 

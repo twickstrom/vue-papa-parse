@@ -40,7 +40,11 @@
   "homepage": "https://github.com/twickstrom/vue-papa-parse",
   "main": "src/index.js",
   "dependencies": {
+    "papaparse": "^5.3.0",
     "vue": "^2.6.12",
-    "papaparse": "^5.3.0"
+    "vue-demi": "^0.12.1"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.11 || >=3.0.5"
   }
 }
