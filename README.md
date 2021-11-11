@@ -1,6 +1,12 @@
 # VuePapaParse
 
-> A simple wrapper for for the original PapaParse built for VueJs. Supports both Vue 2 & Vue 3.
+A simple wrapper for for the original PapaParse built for VueJs. Supports both Vue 2 & Vue 3.
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?hosted_button_id=TU39WLXAJQTR4)
+[![NPM Downloads](https://img.shields.io/npm/dm/vue-papa-parse)](https://www.npmjs.com/package/vue-papa-parse)
+[![Reputation](https://img.shields.io/stackexchange/stackoverflow/r/787796)](https://stackoverflow.com/users/787796/tim-wickstrom)
+
+***
 
 ## Table of contents
 * [VuePapaParse](#vuepapaparse)
