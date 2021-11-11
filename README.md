@@ -1,7 +1,6 @@
 # VuePapaParse
 
-> A simple wrapper for for the original PapaParse built for VueJs.
-Supports both Vue 2 & Vue 3.
+> A simple wrapper for for the original PapaParse built for VueJs. Supports both Vue 2 & Vue 3.
 
 ## Table of contents
 * [VuePapaParse](#vuepapaparse)
