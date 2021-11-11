@@ -1,6 +1,6 @@
 {
   "name": "vue-papa-parse",
-  "description": "A simple wrapper for for the original PapaParse built for VueJs. Supports both Vue 2 & Vue 3",
+  "description": "A simple wrapper for for the original PapaParse built for VueJs. Supports both Vue 2 & Vue 3.",
   "version": "3.0.1",
   "readme": "README.md",
   "author": {
