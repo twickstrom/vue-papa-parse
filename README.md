@@ -3,6 +3,9 @@
 A simple wrapper for for the original PapaParse built for VueJs. Supports both Vue 2 & Vue 3.
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?hosted_button_id=TU39WLXAJQTR4)
+[![NPM](https://img.shields.io/npm/v/vue-papa-parse)](https://www.npmjs.com/package/vue-papa-parse)
+[![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
+[![vue3](https://img.shields.io/badge/vue-3.x-brightgreen.svg)](https://vuejs.org/)
 [![NPM Downloads](https://img.shields.io/npm/dm/vue-papa-parse)](https://www.npmjs.com/package/vue-papa-parse)
 [![Reputation](https://img.shields.io/stackexchange/stackoverflow/r/787796)](https://stackoverflow.com/users/787796/tim-wickstrom)
 
