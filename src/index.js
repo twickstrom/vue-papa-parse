@@ -1,5 +1,5 @@
 import * as Papa from 'papaparse'
-
+import { cloneDeep } from 'lodash'
 const _downloadCsv = (csv, title) => {
   try {
     let csvData = new Blob([csv], { type: 'text/csv' })
@@ -43,7 +43,7 @@ const _dedupe = (arr) => {
 
 const VuePapaParse = {
   install (app, options) {
-    let localPapa = Papa
+    let localPapa = cloneDeep(Papa)
     localPapa.download = _downloadCsv
     localPapa.dedupe = _dedupe
     if ('config' in app && 'globalProperties' in app.config) {
