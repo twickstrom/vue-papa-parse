@@ -1,7 +1,7 @@
 {
   "name": "vue-papa-parse",
   "description": "A simple wrapper for for the original PapaParse built for VueJs. Supports both Vue 2 & Vue 3.",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "readme": "README.md",
   "author": {
     "name": "Tim Wickstrom",
@@ -42,6 +42,7 @@
   "homepage": "https://github.com/twickstrom/vue-papa-parse",
   "main": "src/index.js",
   "dependencies": {
+    "lodash": "^4.17.21",
     "papaparse": "^5.3.0"
   },
   "peerDependencies": {
