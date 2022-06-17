@@ -1,26 +1,26 @@
 import * as Papa from 'papaparse'
-import { cloneDeep } from 'lodash'
+
 const _downloadCsv = (csv, title) => {
   try {
-    let csvData = new Blob([csv], { type: 'text/csv' })
-    let csvUrl = URL.createObjectURL(csvData)
+    const csvData = new Blob([csv], { type: 'text/csv' })
+    const csvUrl = URL.createObjectURL(csvData)
+    const link = document.createElement('a')
 
-    let link = document.createElement('a')
-    link.id = 'csv-' + parseInt(Math.random().toString().slice(2,16))
+    link.id = `csv-${parseInt(Math.random().toString().slice(2,16))}`
     link.href = csvUrl
 
     document.body.appendChild(link)
 
-    let $el = document.getElementById(link.id)
+    const $el = document.getElementById(link.id)
 
 
     $el.style.visibility = 'hidden'
-    $el.download = title + '.csv'
+    $el.download = `${title}.csv`
     $el.click()
 
-    setTimeout(function () {
+    setTimeout(() => {
       document.body.removeChild(link)
-    })
+    }, 1)
 
     return true
   } catch (err) {
@@ -29,23 +29,29 @@ const _downloadCsv = (csv, title) => {
 }
 
 const _dedupe = (arr) => {
-  let flatData = arr.map(obj => JSON.stringify(obj))
-  let output = []
-
-  flatData.forEach(item => {
-    if (!output.find(obj => obj === item)) {
-      output.push(item)
+  return arr.map(obj => JSON.stringify(obj)).reduce((all, item) => {
+    if (!all.find(obj => obj === item)) {
+      all.push(item)
     }
-  })
-
-  return output.map(obj => JSON.parse(obj))
+    return all
+  }, []).map(obj => JSON.parse(obj))
 }
 
 const VuePapaParse = {
   install (app, options) {
-    let localPapa = cloneDeep(Papa)
-    localPapa.download = _downloadCsv
-    localPapa.dedupe = _dedupe
+    const ExtendPapa = {
+      download: _downloadCsv,
+      dedupe: _dedupe
+    }
+
+    const DupedPapa = Object.entries(Papa)
+      .reduce((local, [key, value]) => {
+        local[key] = value
+        return local
+    }, {})
+
+    const localPapa = Object.assign(DupedPapa, ExtendPapa)
+
     if ('config' in app && 'globalProperties' in app.config) {
       app.config.globalProperties.$papa = localPapa
     } else {
